@@ -90,18 +90,22 @@ export default function Home() {
           </div>
           <div className="compare-showcase">
             <article className="compare-option compare-basic">
-              <div className="option-topline"><span>BEFORE</span><small>일반 종합비타민</small></div>
-              <div className="before-product-image"><Image src="/generic-vitamin-bottle.png" alt="무라벨 일반 비타민 용기" fill sizes="(max-width: 720px) 76vw, 330px" /></div>
-              <h3>여러 알로 채우는<br />일반적인 영양 루틴</h3>
+              <div className="compare-visual-stage basic-visual-stage">
+                <div className="before-product-image"><Image src="/generic-vitamin-bottle.png" alt="무라벨 일반 비타민 용기" fill sizes="(max-width: 720px) 86vw, 390px" /></div>
+                <div className="option-topline"><span>BEFORE</span><small>일반 종합비타민</small></div>
+                <h3>여러 알로 채우는<br />일반적인 영양 루틴</h3>
+              </div>
               <div className="option-specs">
                 {comparisonRows.map(([label, normal]) => <div key={label}><small>{label}</small><span>{normal}</span></div>)}
               </div>
             </article>
             <div className="upgrade-flow" aria-hidden="true"><b>→</b></div>
             <article className="compare-option compare-featured">
-              <div className="option-topline"><span>AFTER · VERDANT 23</span></div>
-              <div className="compare-product-image"><Image src="/verdant23-product.png" alt="VERDANT 23 멀티비타민" fill sizes="(max-width: 720px) 86vw, 430px" /></div>
-              <h3>하루 한 알로 완성하는<br /><strong>23가지 고함량 설계</strong></h3>
+              <div className="compare-visual-stage featured-visual-stage">
+                <div className="compare-product-image"><Image src="/verdant23-product.png" alt="VERDANT 23 멀티비타민" fill sizes="(max-width: 720px) 94vw, 500px" /></div>
+                <div className="option-topline"><span>AFTER · VERDANT 23</span></div>
+                <h3>하루 한 알로 완성하는<br /><strong>23가지 고함량 설계</strong></h3>
+              </div>
               <div className="option-specs featured-specs">
                 {comparisonRows.map(([label, , ours]) => <div key={label}><small>{label}</small><strong>{ours}</strong></div>)}
               </div>

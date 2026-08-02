@@ -587,3 +587,34 @@ footer { padding: 54px 0 125px; border-top: 1px solid #e8e8e8; background: #fff;
   .product-chip > span { font-size: 23px; }
   .product-chip p { font-size: 7px; }
 }
+
+/* Image-led comparison cards */
+.compare-visual-stage { position: relative; height: 360px; overflow: hidden; background: #edf0ee; }
+.compare-visual-stage .option-topline { position: absolute; z-index: 3; top: 0; left: 0; width: 100%; padding: 23px 26px 0; }
+.compare-visual-stage h3 {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 22px 26px 24px;
+  background: rgba(255,255,255,.58);
+  border-top: 1px solid rgba(255,255,255,.72);
+  backdrop-filter: blur(9px) saturate(1.08);
+  -webkit-backdrop-filter: blur(9px) saturate(1.08);
+}
+.before-product-image, .compare-product-image { position: absolute; inset: 0; height: auto; margin: 0; background: #edf0ee; }
+.before-product-image img { object-fit: cover; object-position: center; filter: saturate(.72) contrast(.96); transform: scale(1.03); }
+.compare-product-image img { object-fit: cover; object-position: center; transform: scale(1.28) translateX(-12%); transform-origin: center; }
+.compare-featured .compare-visual-stage h3 { padding: 22px 32px 25px; background: rgba(255,255,255,.6); }
+
+@media (max-width: 720px) {
+  .compare-visual-stage { height: 330px; }
+  .compare-visual-stage .option-topline { padding: 20px 22px 0; }
+  .compare-visual-stage h3 { padding: 19px 22px 21px; }
+  .compare-featured .compare-visual-stage h3 { padding: 19px 24px 22px; }
+  .before-product-image { height: auto; margin: 0; }
+  .compare-product-image { height: auto; }
+  .compare-product-image img { transform: scale(1.22) translateX(-12%); }
+}
