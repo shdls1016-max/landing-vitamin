@@ -1220,6 +1220,7 @@ html, body { max-width: 100%; overflow-x: clip; }
   box-shadow: 0 0 9px rgba(138,207,165,.1);
 }
 .energy-data-visual span { bottom: 17px; }
+.bento-primary > div:nth-child(2) { margin-bottom: 128px; }
 
 .review-marquee {
   width: 100%;
@@ -1265,5 +1266,6 @@ html, body { max-width: 100%; overflow-x: clip; }
     padding: 16px 18px 18px;
   }
   .energy-chart { inset: 22px 22px 45px; gap: 4px; }
+  .bento-primary > div:nth-child(2) { margin-bottom: 105px; }
   .review-marquee { width: 100%; }
 }
