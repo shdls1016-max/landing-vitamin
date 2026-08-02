@@ -1266,6 +1266,6 @@ html, body { max-width: 100%; overflow-x: clip; }
     padding: 16px 18px 18px;
   }
   .energy-chart { inset: 22px 22px 45px; gap: 4px; }
-  .bento-primary > div:nth-child(2) { margin-bottom: 105px; }
+  .bento-primary > div:nth-child(2) { margin-bottom: 140px; }
   .review-marquee { width: 100%; }
 }
