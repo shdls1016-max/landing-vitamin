@@ -46,23 +46,18 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow"><span>누적 판매</span> 500,000병 돌파</div>
           <h1>퇴근길 피로,<br />영양제 4알씩<br className="mobile-break" /> 챙겨 드시나요?</h1>
-          <p className="hero-lead">단 한 알로 끝내는 <strong>23가지 프리미엄 고함량</strong><br className="desktop-break" /> 활력 스펙트럼</p>
+          <p className="hero-lead">하루 한 알로 끝내는 23가지 활력 설계<br /><strong>프리미엄 고함량을 한 번에.</strong></p>
           <button className="primary-cta" onClick={scrollToOffer}>지금 40% 할인가로 시작하기 <span>→</span></button>
-          <div className="trust-row">
-            <div className="avatar-stack" aria-hidden="true"><span>K</span><span>L</span><span>P</span></div>
-            <div><div className="stars" aria-label="별점 4.9점">★★★★★ <b>4.9</b><span>/5.0</span></div><p>실제 구매자 평점 12,480개</p></div>
-          </div>
         </div>
         <div className="hero-visual">
-          <div className="visual-label"><span>01</span><p>23종 복합 설계<br /><b>1일 1정</b></p></div>
           <Image src="/verdant23-product.png" alt="VERDANT 23 데일리 멀티비타민 병과 패키지" fill priority sizes="(max-width: 900px) 100vw, 55vw" />
-          <div className="product-chip"><span>40%</span><p>첫 구매<br />SPECIAL OFF</p></div>
-        </div>
-        <div className="hero-proof">
-          <div><b>23종</b><span>비타민·미네랄</span></div>
-          <div><b>3,000%</b><span>고함량 B군</span></div>
-          <div><b>1일 1정</b><span>간편한 루틴</span></div>
-          <div><b>100%</b><span>유럽산 원료</span></div>
+          <div className="product-chip" aria-label="첫 구매 스페셜 오프 40퍼센트">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="offer-ring" d="M 60,60 m -43,0 a 43,43 0 1,1 86,0 a 43,43 0 1,1 -86,0" /></defs>
+              <text><textPath href="#offer-ring" startOffset="4%">FIRST PURCHASE · SPECIAL OFF ·</textPath></text>
+            </svg>
+            <strong>40%</strong>
+          </div>
         </div>
       </section>
 
@@ -99,20 +94,18 @@ export default function Home() {
           <div className="compare-showcase">
             <article className="compare-option compare-basic">
               <div className="option-topline"><span>BEFORE</span><small>일반 종합비타민</small></div>
-              <div className="generic-visual" aria-hidden="true"><span /><span /><span /><span /></div>
               <h3>여러 알로 채우는<br />일반적인 영양 루틴</h3>
               <div className="option-specs">
                 {comparisonRows.map(([label, normal]) => <div key={label}><small>{label}</small><span>{normal}</span></div>)}
               </div>
             </article>
-            <div className="upgrade-flow" aria-hidden="true"><span>UPGRADE</span><b>→</b></div>
+            <div className="upgrade-flow" aria-hidden="true"><b>→</b></div>
             <article className="compare-option compare-featured">
-              <div className="featured-badge">OUR PICK · BEST</div>
-              <div className="option-topline"><span>AFTER</span><small>VERDANT 23</small></div>
+              <div className="option-topline"><span>AFTER · VERDANT 23</span></div>
               <div className="compare-product-image"><Image src="/verdant23-product.png" alt="VERDANT 23 멀티비타민" fill sizes="(max-width: 720px) 86vw, 430px" /></div>
               <h3>하루 한 알로 완성하는<br /><strong>23가지 고함량 설계</strong></h3>
               <div className="option-specs featured-specs">
-                {comparisonRows.map(([label, , ours]) => <div key={label}><small>{label}</small><strong>{ours}</strong><i aria-hidden="true">✓</i></div>)}
+                {comparisonRows.map(([label, , ours]) => <div key={label}><small>{label}</small><strong>{ours}</strong></div>)}
               </div>
             </article>
           </div>
