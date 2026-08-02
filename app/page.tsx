@@ -94,6 +94,7 @@ export default function Home() {
           <div className="compare-showcase">
             <article className="compare-option compare-basic">
               <div className="option-topline"><span>BEFORE</span><small>일반 종합비타민</small></div>
+              <div className="before-product-image"><Image src="/generic-vitamin-bottle.png" alt="무라벨 일반 비타민 용기" fill sizes="(max-width: 720px) 76vw, 330px" /></div>
               <h3>여러 알로 채우는<br />일반적인 영양 루틴</h3>
               <div className="option-specs">
                 {comparisonRows.map(([label, normal]) => <div key={label}><small>{label}</small><span>{normal}</span></div>)}
