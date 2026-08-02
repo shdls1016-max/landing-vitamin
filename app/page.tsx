@@ -92,20 +92,29 @@ export default function Home() {
         <div className="section-shell narrow-shell">
           <div className="center-heading">
             <span className="section-index">02 · COMPARE</span>
-            <h2>직접 비교해보고 결정하세요</h2>
-            <p>매일 먹는 제품이니까, 무엇이 얼마나 다른지 숫자로 확인하세요.</p>
+            <p className="compare-kicker">같은 한 알이어도, 설계는 다릅니다</p>
+            <h2>현재 드시는 제품과<br /><span>VERDANT 23을 비교해보세요</span></h2>
+            <p>함량부터 복용 편의성, 원료 출처까지 중요한 기준만 선명하게 정리했습니다.</p>
           </div>
-          <div className="compare-card">
-            <div className="compare-head compare-grid">
-              <span>비교 항목</span>
-              <span>일반 종합비타민</span>
-              <span className="our-head"><small>OUR PICK</small> VERDANT 23</span>
-            </div>
-            {comparisonRows.map(([label, normal, ours]) => (
-              <div className="compare-row compare-grid" key={label}>
-                <b>{label}</b><span>{normal}</span><strong>{ours}<i aria-hidden="true">✓</i></strong>
+          <div className="compare-showcase">
+            <article className="compare-option compare-basic">
+              <div className="option-topline"><span>BEFORE</span><small>일반 종합비타민</small></div>
+              <div className="generic-visual" aria-hidden="true"><span /><span /><span /><span /></div>
+              <h3>여러 알로 채우는<br />일반적인 영양 루틴</h3>
+              <div className="option-specs">
+                {comparisonRows.map(([label, normal]) => <div key={label}><small>{label}</small><span>{normal}</span></div>)}
               </div>
-            ))}
+            </article>
+            <div className="upgrade-flow" aria-hidden="true"><span>UPGRADE</span><b>→</b></div>
+            <article className="compare-option compare-featured">
+              <div className="featured-badge">OUR PICK · BEST</div>
+              <div className="option-topline"><span>AFTER</span><small>VERDANT 23</small></div>
+              <div className="compare-product-image"><Image src="/verdant23-product.png" alt="VERDANT 23 멀티비타민" fill sizes="(max-width: 720px) 86vw, 430px" /></div>
+              <h3>하루 한 알로 완성하는<br /><strong>23가지 고함량 설계</strong></h3>
+              <div className="option-specs featured-specs">
+                {comparisonRows.map(([label, , ours]) => <div key={label}><small>{label}</small><strong>{ours}</strong><i aria-hidden="true">✓</i></div>)}
+              </div>
+            </article>
           </div>
           <p className="table-note">* 함량은 영양성분 기준치 대비 최대치 기준이며 성분별 함량은 제품 라벨을 확인해 주세요. 가격은 3개월 정기 구성 기준입니다.</p>
         </div>
