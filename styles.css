@@ -1269,3 +1269,104 @@ html, body { max-width: 100%; overflow-x: clip; }
   .bento-primary > div:nth-child(2) { margin-bottom: 140px; }
   .review-marquee { width: 100%; }
 }
+
+/* 2026-08-03 detail alignment */
+.problem-list {
+  display: grid;
+  gap: 12px;
+  margin-right: 0;
+  padding: 0 0 0 26px;
+  background: transparent;
+  border-left: 3px solid #aeb9b3;
+}
+.problem-list > div {
+  min-height: 102px;
+  padding: 18px 22px;
+  gap: 16px;
+  background: #f3f5f4;
+  border: 1px solid #e3e7e5;
+}
+.problem-list > div + div { border-top: 1px solid #e3e7e5; }
+.x-icon {
+  width: 30px;
+  height: 30px;
+  padding: 0 0 2px;
+  color: #f5f7f6;
+  background: #c5cdc9;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+.problem-list::after { height: 54px; }
+
+.solution-inner {
+  display: grid;
+  padding-top: 54px;
+}
+.solution-group {
+  grid-column: 2;
+  padding-left: 26px;
+  border-left: 3px solid var(--green);
+}
+.solution-title { margin-bottom: 18px; }
+.solution-title h3 { font-size: 23px; line-height: 1.4; }
+.solution-points {
+  gap: 12px;
+  padding-left: 0;
+  border-left: 0;
+}
+
+.compare-visual-stage h3,
+.compare-featured .compare-visual-stage h3 {
+  max-width: 86%;
+  padding: 0 0 22px 20px;
+  background: transparent;
+  border: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.72);
+}
+
+.energy-data-visual {
+  height: 39%;
+  opacity: .34;
+}
+.energy-chart {
+  inset: 30px 28px 20px;
+  gap: 10px;
+}
+.energy-chart i {
+  min-width: 11px;
+  background: linear-gradient(to top, rgba(224,242,231,.7) 0%, rgba(141,191,160,.3) 64%, rgba(141,191,160,.025) 100%);
+  box-shadow: none;
+}
+.energy-data-visual span { display: none; }
+
+@media (max-width: 720px) {
+  .problem-list {
+    gap: 10px;
+    margin-right: 0;
+    padding: 0 0 0 16px;
+  }
+  .problem-list > div {
+    min-height: 98px;
+    padding: 16px;
+  }
+  .problem-list::after { height: 44px; }
+  .solution-inner { padding-top: 44px; }
+  .solution-group {
+    grid-column: 1;
+    padding-left: 16px;
+  }
+  .solution-title { margin-bottom: 14px; }
+  .solution-title h3 { font-size: 21px; }
+
+  .compare-visual-stage h3,
+  .compare-featured .compare-visual-stage h3 {
+    padding: 0 0 19px 18px;
+  }
+  .energy-data-visual { height: 34%; opacity: .32; }
+  .energy-chart { inset: 24px 22px 16px; gap: 7px; }
+  .energy-chart i { min-width: 8px; }
+}
