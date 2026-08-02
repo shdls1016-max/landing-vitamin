@@ -52,11 +52,8 @@ export default function Home() {
         <div className="hero-visual">
           <Image src="/verdant23-product.png" alt="VERDANT 23 데일리 멀티비타민 병과 패키지" fill priority sizes="(max-width: 900px) 100vw, 55vw" />
           <div className="product-chip" aria-label="첫 구매 스페셜 오프 40퍼센트">
-            <svg viewBox="0 0 120 120" aria-hidden="true">
-              <defs><path id="offer-ring" d="M 60,60 m -43,0 a 43,43 0 1,1 86,0 a 43,43 0 1,1 -86,0" /></defs>
-              <text><textPath href="#offer-ring" startOffset="4%">FIRST PURCHASE · SPECIAL OFF ·</textPath></text>
-            </svg>
-            <strong>40%</strong>
+            <span>40%</span>
+            <p>첫 구매<br />SPECIAL OFF</p>
           </div>
         </div>
       </section>
