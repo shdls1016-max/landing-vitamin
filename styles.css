@@ -1059,3 +1059,13 @@ html, body { max-width: 100%; overflow-x: clip; }
 @media (prefers-reduced-motion: reduce) {
   .review-grid { animation: none; }
 }
+
+.problem.section-pad { padding-bottom: 0; }
+
+@media (min-width: 721px) {
+  .sticky-bar button {
+    min-width: 196px;
+    gap: 18px;
+    white-space: nowrap;
+  }
+}
