@@ -22,3 +22,13 @@ planButtons.forEach((button) => {
 document.querySelector('#purchase-button')?.addEventListener('click', () => {
   alert('선택하신 구성으로 구매 단계로 이동합니다.');
 });
+
+const reviewTrack = document.querySelector('.review-grid');
+
+if (reviewTrack && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  [...reviewTrack.children].forEach((review) => {
+    const duplicate = review.cloneNode(true);
+    duplicate.setAttribute('aria-hidden', 'true');
+    reviewTrack.appendChild(duplicate);
+  });
+}

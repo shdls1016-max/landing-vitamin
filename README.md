@@ -10,3 +10,7 @@
 - `assets/` — 상품 및 배경 이미지
 
 `index.html`을 브라우저에서 열거나 GitHub Pages의 `main / root`를 선택하면 됩니다.
+
+## 이미지 출처
+
+- `assets/energy-data-unsplash.jpg` — Photo by Luke Chesser on Unsplash, [Unsplash License](https://unsplash.com/license)
