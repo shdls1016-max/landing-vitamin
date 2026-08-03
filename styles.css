@@ -1298,11 +1298,11 @@ html, body { max-width: 100%; overflow-x: clip; }
   font-weight: 600;
   line-height: 1;
 }
-.problem-list::after { height: 54px; }
+.problem-list::after { height: 80px; }
 
 .solution-inner {
   display: grid;
-  padding-top: 54px;
+  padding-top: 80px;
 }
 .solution-group {
   grid-column: 2;
@@ -1354,8 +1354,8 @@ html, body { max-width: 100%; overflow-x: clip; }
     min-height: 98px;
     padding: 16px;
   }
-  .problem-list::after { height: 44px; }
-  .solution-inner { padding-top: 44px; }
+  .problem-list::after { height: 80px; }
+  .solution-inner { padding-top: 80px; }
   .solution-group {
     grid-column: 1;
     padding-left: 16px;
