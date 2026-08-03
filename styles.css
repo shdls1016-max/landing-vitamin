@@ -1142,7 +1142,7 @@ html, body { max-width: 100%; overflow-x: clip; }
   padding: 18px 22px;
   background: #fff;
   border: 1px solid #dce6e1;
-  box-shadow: 0 12px 28px rgba(11,60,38,.07);
+  box-shadow: 0 12px 28px rgba(2,0,2,.03);
 }
 .solution-points > div > span {
   display: grid;
@@ -1333,8 +1333,9 @@ html, body { max-width: 100%; overflow-x: clip; }
   opacity: .34;
 }
 .energy-chart {
-  inset: 30px 28px 20px;
+  inset: 30px 28px 2px;
   gap: 10px;
+  opacity: 0.4;
 }
 .energy-chart i {
   min-width: 11px;
