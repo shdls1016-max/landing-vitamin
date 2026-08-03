@@ -1382,9 +1382,7 @@ html, body { max-width: 100%; overflow-x: clip; }
   }
   .hero::after {
     z-index: 1;
-    background:
-      linear-gradient(90deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.96) 48%, rgba(255,255,255,.64) 70%, rgba(255,255,255,.08) 100%),
-      linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.84) 53%, rgba(255,255,255,.12) 82%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.94) 45%, rgba(255,255,255,.76) 58%, rgba(255,255,255,.14) 72%, rgba(255,255,255,0) 84%);
   }
   .hero-copy {
     position: relative;
@@ -1412,5 +1410,11 @@ html, body { max-width: 100%; overflow-x: clip; }
   .basic-visual-stage,
   .before-product-image {
     background: #f4f4f4;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero::after {
+    background: linear-gradient(90deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.96) 54%, rgba(255,255,255,.78) 72%, rgba(255,255,255,.15) 92%, rgba(255,255,255,0) 100%);
   }
 }
